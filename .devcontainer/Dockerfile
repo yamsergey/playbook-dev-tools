@@ -40,3 +40,5 @@ RUN Xvfb :1 & ./sdkinstall --install 10.0.9.2372
 RUN echo "source /root/bbndk/bbndk-env_10_0_9_2372.sh" >> /root/.bashrc
 RUN echo "export LC_ALL=C" >> /root/.bashrc
 WORKDIR /root/packages
+
+RUN apt-get -yq install eclipse
