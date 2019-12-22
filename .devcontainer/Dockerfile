@@ -43,4 +43,4 @@ WORKDIR /root/packages
 
 RUN apt-get -q update
 RUN apt-get -yq install eclipse
-RUN apt-get -yq install gtk-chtheme
+RUN apt-get -yq install gtk-chtheme ubuntu-mate-themes fonts-roboto
