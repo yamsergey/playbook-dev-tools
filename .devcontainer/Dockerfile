@@ -41,4 +41,6 @@ RUN echo "source /root/bbndk/bbndk-env_10_0_9_2372.sh" >> /root/.bashrc
 RUN echo "export LC_ALL=C" >> /root/.bashrc
 WORKDIR /root/packages
 
+RUN apt-get -q update
 RUN apt-get -yq install eclipse
+RUN apt-get -yq install gtk-chtheme
