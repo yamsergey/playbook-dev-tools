@@ -35,11 +35,10 @@ RUN rm momentics-2.1.2-201503050937.linux.x86.run
 
 WORKDIR /root/bbndk
 ENV DISPLAY=:1
-RUN Xvfb :1 & ./sdkinstall --install 10.0.9.2372
+RUN Xvfb :1 & ./sdkinstall --install 10.3.1.995  
 
-RUN echo "source /root/bbndk/bbndk-env_10_0_9_2372.sh" >> /root/.bashrc
+RUN echo "source /root/bbndk/bbndk-env_10.3.1.995.sh" >> /root/.bashrc
 RUN echo "export LC_ALL=C" >> /root/.bashrc
-WORKDIR /root/packages
 
 RUN apt-get -q update
 RUN apt-get -yq install eclipse
